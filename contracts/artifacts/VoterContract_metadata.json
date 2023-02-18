@@ -1,0 +1,155 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_candidateAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_partyName",
+						"type": "string"
+					}
+				],
+				"name": "getVotesByParty",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "totatVotes",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nicop",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_partyName",
+						"type": "string"
+					}
+				],
+				"name": "insertVoteByParty",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_partyName",
+						"type": "string"
+					}
+				],
+				"name": "verifyMyVote",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "nicop",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "voterIndex",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "voters",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "nicop",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "ethereumAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Voter.sol": "VoterContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Candidate.sol": {
+			"keccak256": "0xbc72064d08c79dd848dc5669262f6feaccbbda6c1d33b9daba010a08616c4365",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://818f9feb9fa68806c8f01b65d9f5c82f494bbb2ba3dd9fa3414d6035edb27272",
+				"dweb:/ipfs/QmfY8Q8aggfH1zuCX74vkUtQwyiTfrXxThoQtcoFMS4Tm7"
+			]
+		},
+		"contracts/Voter.sol": {
+			"keccak256": "0x5e9e082b6012f17947678b44048a85ace8efbc77e5154176f229845fb44eb065",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://34e5c0ed659181b9045b16f89ee8d5dccf7a4a97fbe6d7f4fc16fdeb54e49a9b",
+				"dweb:/ipfs/QmNPWAzRwRpH9MuMG4hVVTzmr7uyeXhSPH9iZ4SFLdYiWb"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,168 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_electionCommissionAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_partyName",
+						"type": "string"
+					}
+				],
+				"name": "getCandidateAddressByPartyName",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "_candidateAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_partyName",
+						"type": "string"
+					}
+				],
+				"name": "getCandidateByPartyName",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "fname",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "lname",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "partyName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "partySymbol",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "ethereumAddress",
+								"type": "address"
+							}
+						],
+						"internalType": "struct Candidate.CandidateData",
+						"name": "_candidate",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPartiesList",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "parties",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_fname",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_lname",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_partyName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_partySymbol",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_candidateAddress",
+						"type": "address"
+					}
+				],
+				"name": "setCandidateData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Candidate.sol": "Candidate"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Candidate.sol": {
+			"keccak256": "0x551774ce8b08c04452156f5e3cb612d1aea363053145e902baafc6812c3d20e6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1fac0cf3fafa36a1809b17b79236f0041492a0c94d7d75faaa4168b402f138aa",
+				"dweb:/ipfs/QmW4TCiLAFEveYpTrabC9kMCD9ejLFBVPi4Zcg8sLG5S1Q"
+			]
+		}
+	},
+	"version": 1
+}
