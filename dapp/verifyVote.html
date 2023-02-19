@@ -5,28 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insert Vote</title>
+    <title>Verify Vote</title>
 </head>
 
 <body>
-    <h1>Insert Your Vote</h1>
-    <form action="">
+    <h1>Verify Your Vote</h1>
+    <br>
+    <div>
+
         <label for="parties">Parties</label>
 
         <select name="parties" id="parties">
             <option value="">etc</option>
         </select><br>
 
-        <label for="nicop">National ID #</label>
-        <input type="text" id="nicop" name="nicop"> <br>
+        <label for="account">Voter's Ethereum Account</label><br>
+        <input type="text" id="account" name="account" value="" readonly><br>
+        <input type="button" value="verify Now">
 
-        <label for="account">Voter's Ethereum Account</label>
-        <input type="text" id="account" name="account" value="" readonly> <br>
-
-        <input type="button" value="Cast">
+    </div>
 
 
-    </form>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script type="text/javascript" src="node_modules/web3/dist/web3.min.js"></script>
