@@ -17,7 +17,6 @@ const getWeb3 = () => {
                     reject(error);
                 }
             }
-
             else {
                 reject("must install MetaMask");
             }
