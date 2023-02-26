@@ -42,8 +42,6 @@ const getCandidateContract = async (web3) => {
 }
 
 
-
-
 async function initSetup() {
     web3 = await getWeb3();
     await getElectionCommissionContract(web3);
