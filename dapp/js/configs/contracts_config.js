@@ -1,4 +1,4 @@
-let electionCommissionContractAddress = "0x55BF1B475544C482581FB13336B2EE55f53ddD98";
+let electionCommissionContractAddress = "0x5Af32fF7318b77A73368F94554202dF4f361B068";
 let candidateContractAddress = "";
 let voterContractAddress = "";
 
