@@ -18,15 +18,19 @@ function onSubmitForm() {
     // deployment -  it also have gasPrice and callback functions
     // (myaccount) object comes from web3_config.js file for metamask communication
     // web3.utils.toWei() is a function for adding gas price and coin unit
-    
+
     ecContract.methods.insertNewCandidate(fname, lname, party, symbol, ec_address)
         .send({ from: myaccount[0], gasPrice: web3.utils.toWei("4.1", "Gwei") },
             (error, result) => {
                 if (result) {
                     console.log(result); //result will have transaction hash
-                } else {
-                    console.log(error); // it will have error message in case of some error
+                    $("#resultdiv").text(result);
                 }
+                else {
+                    console.log(error); // it will have error message in case of some error
+                    $("#resultdiv").text(error);
+                }
+
             });
 
 }
